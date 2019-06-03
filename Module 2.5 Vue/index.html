@@ -11,8 +11,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<!--    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>-->
-
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -39,9 +37,8 @@
                     <div class="flip-card-back">
                         <h1>{{book.titulo}}</h1>
                         <p>{{book.descripcion}}</p>
-                        <button class="cardButton" data-fancybox="gallery" v-bind:href="book.detalle">See More</button>
+                        <backbutton v-bind:href="book.detalle"></backbutton>
                     </div>
-
                 </div>
             </div>
         </div>

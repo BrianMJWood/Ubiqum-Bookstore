@@ -3,7 +3,6 @@ var books = []
 /* 
 getData() is a function to fetch data from the provided API, assign it a timestamp, and also assign the fetched data to local storage. Once both are complete, the function to Display Books is called.
 */
-
 function getData() {
 
     var data;
@@ -34,11 +33,9 @@ function getData() {
         console.log("Request failed: " + error.message);
     });
 }
-
 /*
 This block of code will check if there's any data in local storage less than 10 minutes old. If so, that data will be used for the displayBooks function. Otherwise, a fresh fetch/display will be used for it.
 */
-
 var timeStampNow = Date.now();
 
 if (localStorage.getItem("booksData") && timeStampNow - localStorage.getItem("Timestamp") < 600000) {
@@ -47,11 +44,9 @@ if (localStorage.getItem("booksData") && timeStampNow - localStorage.getItem("Ti
 } else {
     getData();
 }
-
 /*
 This is our primary display function. It takes data passed to it either from a fresh fetch or from local storage and dynamically creates and displays large thumbnails for each object from the API. Each thumbnail has the requested flipcard functionality, including a button to display a larger image in a FancyBox gallery.
 */
-
 function displayBooks(array) {
 
     var mainDisplay = document.getElementById("mainDisplay");

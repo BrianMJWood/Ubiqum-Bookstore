@@ -39,7 +39,7 @@ button:focus {
     background: black;
 }
 .searchBox {
-    margin-right: 100px;
+    margin-right: 295px;
     margin-left: 20px;
 }
 .previewImage {
@@ -88,7 +88,6 @@ button:focus {
     transform: rotateY(180deg);
     padding: 20px;
 }
-
 .cardButton {
     color: black;
     outline: none;

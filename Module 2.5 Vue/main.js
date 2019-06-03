@@ -53,7 +53,6 @@ This block of code will check if there's any data in local storage less than 10 
 
         if (localStorage.getItem("booksData") && timeStampNow - localStorage.getItem("Timestamp") < 600000) {
             this.books = JSON.parse(localStorage.getItem("booksData"));
-//            this.bookTitles = JSON.parse(localStorage.getItem("bookTitleData"));
         } else {
             this.getData();
         }
@@ -67,6 +66,11 @@ This is our search functionality. The website only displays filtered books, and 
 
                 return book.titulo.toUpperCase().match(this.search.toUpperCase()) || book.descripcion.toUpperCase().match(this.search.toUpperCase())
             })
+        }
+    },
+    components: {
+        "backbutton": {
+         template: '<button class="cardButton" data-fancybox="gallery">See More</button>' 
         }
     }
 });
