@@ -53,7 +53,7 @@ This block of code will check if there's any data in local storage less than 10 
 
         if (localStorage.getItem("booksData") && timeStampNow - localStorage.getItem("Timestamp") < 600000) {
             this.books = JSON.parse(localStorage.getItem("booksData"));
-            this.bookTitles = JSON.parse(localStorage.getItem("bookTitleData"));
+//            this.bookTitles = JSON.parse(localStorage.getItem("bookTitleData"));
         } else {
             this.getData();
         }

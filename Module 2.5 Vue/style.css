@@ -1,6 +1,7 @@
 body {
     background-color: #f4f5f9;
     font-size: 16px;
+    font-family: "Quicksand", sans-serif;
 }
 header {
     display: flex;
@@ -78,7 +79,7 @@ img {
     transform: rotateY(180deg);
     padding: 20px;
 }
-button {
+.cardButton {
     color: black;
     outline: none;
     position:inherit;

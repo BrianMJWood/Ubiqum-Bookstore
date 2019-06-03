@@ -67,6 +67,7 @@ function displayBooks(array) {
 
         frontButton.setAttribute("data-fancybox", "gallery")
         frontButton.setAttribute("href", largeImage)
+        frontButton.className = "cardButton";
 
         var image = document.createElement("IMG");
         image.setAttribute("src", imageLink);
