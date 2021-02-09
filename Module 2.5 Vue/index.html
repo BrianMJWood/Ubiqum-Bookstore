@@ -32,12 +32,12 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
 
-                        <img class="previewImage boxShadow" v-bind:src="book.portada" />
+                        <img class="previewImage boxShadow" v-bind:src="book.cover" />
                     </div>
                     <div class="flip-card-back">
-                        <h1>{{book.titulo}}</h1>
-                        <p>{{book.descripcion}}</p>
-                        <backbutton v-bind:href="book.detalle"></backbutton>
+                        <h1>{{book.title}}</h1>
+                        <p>{{book.description}}</p>
+                        <backbutton v-bind:href="book.details"></backbutton>
                     </div>
                 </div>
             </div>
