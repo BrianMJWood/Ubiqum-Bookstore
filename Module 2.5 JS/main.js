@@ -7,7 +7,7 @@ function getData() {
 
     var data;
 
-    fetch("https://api.myjson.com/bins/1h3vb3", {
+    fetch("https://api.jsonbin.io/b/5ea833484c87c3359a632938", {
 
         method: "GET",
 
