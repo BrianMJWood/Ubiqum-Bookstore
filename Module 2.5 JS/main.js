@@ -53,12 +53,12 @@ function displayBooks(array) {
     mainDisplay.innerHTML = ""
     for (var i = 0; i < array.length; i++) {
 
-        var imageLink = array[i].portada;
-        var titleData = array[i].titulo;
-        var descriptionData = array[i].descripcion;
+        var imageLink = array[i].cover;
+        var titleData = array[i].title;
+        var descriptionData = array[i].description;
         var frontButton = document.createElement("button");
         frontButton.append("See More");
-        var largeImage = array[i].detalle;
+        var largeImage = array[i].details;
 
         frontButton.setAttribute("data-fancybox", "gallery")
         frontButton.setAttribute("href", largeImage)
@@ -113,7 +113,7 @@ function filterBooks() {
 
     var filterValue = document.getElementById("search").value.toUpperCase();
     for (var i = 0; i < books.length; i++) {
-        if ((books[i].titulo.toUpperCase().indexOf(filterValue) > -1) || (books[i].descripcion.toUpperCase().indexOf(filterValue) > -1)) {
+        if ((books[i].title.toUpperCase().indexOf(filterValue) > -1) || (books[i].description.toUpperCase().indexOf(filterValue) > -1)) {
             filteredBooks.push(books[i]); displayBooks(filteredBooks);
         }
     }
